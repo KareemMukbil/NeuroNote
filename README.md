@@ -1,188 +1,188 @@
-*# Real-Time Voice Transcriber*
+# Real-Time Voice Transcriber
 
 
 
-*A live voice transcription application using OpenAI's Whisper model with a user-friendly GUI.*
+A live voice transcription application using OpenAI's Whisper model with a user-friendly GUI.
 
 
 
-*## Features*
+## Features
 
 
 
-*- Real-time voice transcription*
+- Real-time voice transcription
 
-*- GPU acceleration support*
+- GPU acceleration support
 
-*- Multiple Whisper model sizes*
+- Multiple Whisper model sizes
 
-*- Adjustable voice activity detection*
+- Adjustable voice activity detection
 
-*- Audio level monitoring*
+- Audio level monitoring
 
-*- Clean, responsive GUI*
+- Clean, responsive GUI
 
 
 
-*## Installation*
+## Installation
 
 
 
-*1. \*\*Install Python dependencies:\*\**
+1. Install Python dependencies:
 
-*```bash*
+```bash
 
-*pip install -r requirements.txt*
+pip install -r requirements.txt
 
-*```*
+```
 
 
 
-*2. \*\*For Windows users (PyAudio):\*\**
+2. For Windows users (PyAudio):
 
-*If you get errors installing PyAudio, try:*
+If you get errors installing PyAudio, try:
 
-*```bash*
+```bash
 
-*pip install pipwin*
+pip install pipwin
 
-*pipwin install pyaudio*
+pipwin install pyaudio
 
-*```*
+```
 
 
 
-*3. \*\*For GPU support:\*\**
+3. For GPU support:
 
-*Make sure you have CUDA installed and compatible PyTorch:*
+Make sure you have CUDA installed and compatible PyTorch:
 
-*```bash*
+```bash
 
-*pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118*
+pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118
 
-*```*
+```
 
 
 
-*## Usage*
+## Usage
 
 
 
-*1. \*\*Run the application:\*\**
+1. Run the application:
 
-*```bash*
+```bash
 
-*python gui.py*
+python gui.py
 
-*```*
+```
 
 
 
-*2. \*\*Configure settings:\*\**
+2. Configure settings:
 
-   *- Select appropriate Whisper model (smaller = faster, larger = more accurate)*
+   - Select appropriate Whisper model (smaller = faster, larger = more accurate)
 
-   *- Adjust pause threshold (how long to wait before processing speech)*
+   - Adjust pause threshold (how long to wait before processing speech)
 
-   *- Set minimum chunk duration*
+   - Set minimum chunk duration
 
-   *- Toggle GPU acceleration if available*
+   - Toggle GPU acceleration if available
 
 
 
-*3. \*\*Start recording:\*\**
+3. Start recording:
 
-   *- Click "Start Recording"*
+   - Click "Start Recording"
 
-   *- Speak naturally - the app will detect pauses and transcribe speech segments*
+   - Speak naturally - the app will detect pauses and transcribe speech segments
 
-   *- Transcription appears in real-time in the text area*
+   - Transcription appears in real-time in the text area
 
 
 
-*## Model Recommendations*
+## Model Recommendations
 
 
 
-*- \*\*tiny.en\*\*: Fastest, lowest accuracy (~32MB)*
+- tiny.en: Fastest, lowest accuracy (~32MB)
 
-*- \*\*base.en\*\*: Good balance of speed/accuracy (~74MB) - \*\*Recommended for most users\*\**
+- base.en: Good balance of speed/accuracy (~74MB) - Recommended for most users
 
-*- \*\*small.en\*\*: Better accuracy, moderate speed (~244MB)*
+- small.en: Better accuracy, moderate speed (~244MB)
 
-*- \*\*medium.en\*\*: High accuracy, slower (~769MB)*
+- medium.en: High accuracy, slower (~769MB)
 
-*- \*\*large-v2\*\*: Highest accuracy, slowest (~1550MB) - \*\*Requires 8GB+ GPU RAM\*\**
+- large-v2: Highest accuracy, slowest (~1550MB) - Requires 8GB+ GPU RAM
 
 
 
-*## Troubleshooting*
+## Troubleshooting
 
 
 
-*\*\*"No audio device found":\*\**
+"No audio device found":
 
-*- Check microphone permissions*
+- Check microphone permissions
 
-*- Ensure microphone is not used by other applications*
+- Ensure microphone is not used by other applications
 
 
 
-*\*\*"CUDA out of memory":\*\**
+"CUDA out of memory":
 
-*- Use a smaller model (base.en or small.en)*
+- Use a smaller model (base.en or small.en)
 
-*- Reduce chunk size in settings*
+- Reduce chunk size in settings
 
-*- Close other GPU-intensive applications*
+- Close other GPU-intensive applications
 
 
 
-*\*\*Poor transcription quality:\*\**
+Poor transcription quality:
 
-*- Speak clearly and at moderate pace*
+- Speak clearly and at moderate pace
 
-*- Reduce background noise*
+- Reduce background noise
 
-*- Adjust silence threshold*
+- Adjust silence threshold
 
-*- Use a better microphone*
+- Use a better microphone
 
 
 
-*\*\*Application freezes:\*\**
+Application freezes:
 
-*- Large models may take time to load initially*
+- Large models may take time to load initially
 
-*- Check console for error messages*
+- Check console for error messages
 
-*- Restart the application*
+- Restart the application
 
 
 
-*## System Requirements*
+## System Requirements
 
 
 
-*- Python 3.8+*
+- Python 3.8+
 
-*- 4GB+ RAM (8GB+ recommended for large models)*
+- 4GB+ RAM (8GB+ recommended for large models)
 
-*- Microphone access*
+- Microphone access
 
-*- Optional: CUDA-compatible GPU for acceleration*
+- Optional: CUDA-compatible GPU for acceleration
 
 
 
-*## Notes*
+## Notes
 
 
 
-*- First run will download the selected Whisper model*
+- First run will download the selected Whisper model
 
-*- GPU acceleration significantly improves performance*
+- GPU acceleration significantly improves performance
 
-*- The application processes speech in chunks based on detected pauses*
+- The application processes speech in chunks based on detected pauses
 
-*- Transcription quality depends on audio quality and model size*
+- Transcription quality depends on audio quality and model size
 
