@@ -1,6 +1,5 @@
 # Real-Time Voice Transcriber
-
-
+*Neuronote is an open-source personal project not affiliated with other applications of similar name.*
 
 A live voice transcription application using OpenAI's Whisper model with a user-friendly GUI.
 
